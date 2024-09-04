@@ -7,6 +7,7 @@ Update the `cdk.json` then run:
 ```bash
 pip install aws-cdk-lib==2.154.1
 nvm install 22
+cd bucket
 cdk deploy
 ```
 
