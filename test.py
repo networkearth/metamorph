@@ -2,9 +2,7 @@
 from metamorph.glue import build_glue, read_sample_data
 from awsglue import DynamicFrame
 
-from transforms.add_suntimes import add_suntimes
-
-DynamicFrame.add_suntimes = add_suntimes
+import transforms.add_suntimes as add_suntimes
 
 if __name__ == '__main__':
     data_sample = [

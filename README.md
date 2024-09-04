@@ -1,5 +1,17 @@
 # metamorph
 
+## Setting Up the Bucket
+
+Update the `cdk.json` then run:
+
+```bash
+pip install aws-cdk-lib==2.154.1
+nvm install 22
+cdk deploy
+```
+
+Then go create the `transforms` folder in the bucket created. 
+
 ## Getting Setup
 
 ```bash

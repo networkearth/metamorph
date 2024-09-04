@@ -1,6 +1,8 @@
 import datetime
 from suntimes import SunTimes
 
+from awsglue import DynamicFrame
+
 def add_suntimes_for_record(row):
     date = datetime.datetime.fromtimestamp(row['epoch'])
     suntime = SunTimes(longitude=row['lon'], latitude=row['lat'], altitude=0)
@@ -10,3 +12,6 @@ def add_suntimes_for_record(row):
 
 def add_suntimes(self):
     return self.map(f = add_suntimes_for_record)
+
+DynamicFrame.add_suntimes = add_suntimes
+
