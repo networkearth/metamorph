@@ -8,5 +8,7 @@ setup(
     packages=find_packages(include=['metamorph', 'metamorph*', 'transforms', 'transforms*']),
     install_requires=[
         'click==8.1.7',
+        'suntimes==1.1.2',
+        'h3==3.7.7',
     ]
 )
