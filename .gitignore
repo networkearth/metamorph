@@ -5,3 +5,4 @@ cdk.out
 *.nc
 haven
 build
+*.csv.gz

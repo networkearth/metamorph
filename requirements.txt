@@ -1,0 +1,2 @@
+watercycle @ git+https://github.com/networkearth/watercycle@main
+aws-cdk-lib==2.154.1

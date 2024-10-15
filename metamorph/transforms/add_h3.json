@@ -1,0 +1,35 @@
+{
+    "name": "add_h3",
+    "displayName": "Add H3",
+    "functionName": "add_h3",
+    "description": "Add H3 index to the data (h3_index, h3_resolution, h3_lon_bin, h3_lat_bin)",
+    "parameters": [
+        {
+            "name": "resolution",
+            "displayName": "Resolution",
+            "type": "str",
+            "description": "H3 resolution to use"
+        },
+        {
+            "name": "lat_column",
+            "displayName": "Latitude Column",
+            "type": "str",
+            "isOptional": true,
+            "description": "Defaults to lat"
+        },
+        {
+            "name": "lon_column",
+            "displayName": "Longitude Column",
+            "type": "str",
+            "isOptional": true,
+            "description": "Defaults to lon"
+        },
+        {
+            "name": "prefix",
+            "displayName": "Field Prefix",
+            "type": "str",
+            "isOptional": true,
+            "description": "Add a prefix to all the new column names"
+        }
+    ]
+}

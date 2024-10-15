@@ -2,18 +2,19 @@
 from metamorph.glue import build_glue, read_sample_data
 from awsglue import DynamicFrame
 
-import transforms.add_h3 as add_h3
+from metamorph.transforms import add_depth_class
 
 if __name__ == '__main__':
     data_sample = [
-        {"lon": 10, "lat": 10, "epoch": 300},
-        {"lon": 45, "lat": 56, "epoch": 600},
+        {"depth": 50},
+        {"depth": 100},
+        {"depth": 75}
     ]
 
     context, job = build_glue()
     df = read_sample_data(data_sample, context)
 
-    df = df.add_h3(resolution='4')
+    df = df.add_depth_class(depth_classes='25,50,100,150', depth_column='depth')
 
     df.show()
 

@@ -1,0 +1,21 @@
+{
+    "name": "add_depth_class",
+    "displayName": "Add Depth Class",
+    "functionName": "add_depth_class",
+    "description": "Add selected depth class to the data",
+    "parameters": [
+        {
+            "name": "depth_classes",
+            "displayName": "Depth Classes",
+            "type": "str",
+            "description": "example: 25,50,100"
+        },
+        {
+            "name": "depth_column",
+            "displayName": "Depth Column",
+            "type": "str",
+            "description": "Column to use as the depth field when selecting the depth class. Defaults to depth",
+            "isOptional": true
+        }
+    ]
+}
