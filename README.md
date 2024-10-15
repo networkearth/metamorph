@@ -54,3 +54,9 @@ Then go create the `transforms` folder in the bucket created.
 
 Deploying a transform is now as simple as uploading your `.py` and `.json` files to the `transforms` folder in the bucket which you can do through the AWS console. 
 
+## Debugging a Glue Transform
+
+Sometimes your test will simply return nothing (even with a `df.show()`). This is usually an indication
+that one of the internal functions is throwing an exception. Easiest way to debug this is to run the 
+internal functions directly to see what's going on. 
+

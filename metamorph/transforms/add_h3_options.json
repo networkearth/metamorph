@@ -1,0 +1,20 @@
+{
+    "name": "add_h3_options",
+    "displayName": "Add H3 Options",
+    "functionName": "add_h3_options",
+    "description": "Given an h3 index create an array of all h3 indices within max_km",
+    "parameters": [
+        {
+            "name": "col",
+            "displayName": "H3 Column",
+            "type": "str",
+            "description": "Column with base h3 index"
+        },
+        {
+            "name": "max_km",
+            "displayName": "Maximum Kilometers",
+            "type": "str",
+            "description": "Maximum distance in kilometers an h3 option can be from the base h3 index"
+        }
+    ]
+}
