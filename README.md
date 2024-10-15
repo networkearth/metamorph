@@ -19,9 +19,9 @@ pip install -e .
 ## Creating and Testing a Glue Transform 
 
 You'll need two things for the transform - a python file and json config of the same name. 
-You can checkout `transforms/add_depth_class.py` and `transforms/add_depth_class.json` for an example.
+You can checkout `metamorph/transforms/add_depth_class.py` and `metamorph/transforms/add_depth_class.json` for an example.
 
-Similarily you can create a test file. See `tests/test_add_depth_class.py` for an example.
+Similarily you can create a test file. See `metamorph/tests/test_add_depth_class.py` for an example.
 
 To run a test you'll first need to be signed into AWS.
 
@@ -36,7 +36,7 @@ watercycle login admin
 Once you're signed in you can run a command like the following (assuming you are in the `aws-glue-libs` directory):
 
 ```bash
-./bin/gluesparksubmit ../tests/test_add_depth_class.py
+./bin/gluesparksubmit ..metamorph/tests/test_add_depth_class.py
 ```
 
 ## Deploying a Glue Transform
